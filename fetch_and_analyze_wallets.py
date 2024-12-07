@@ -44,10 +44,10 @@ transaction_history_api_url = "https://api.shyft.to/sol/v1/transaction/history"
 
 # General
 do_not_check_list = ["So11111111111111111111111111111111111111112","7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs","3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh","Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB","JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN"]
-winrate_min = 50
-winrate_max = 85
-roi_min = 80
-invested_min = 5000
+winrate_min = os.getenv('WINRATE_MIN')
+winrate_max = os.getenv('WINRATE_MAX')
+roi_min = os.getenv('ROI_MIN')
+invested_min = os.getenv('INVESTED_MIN')
 
 # Files
 potential_output_file = f'{outputs_folder}/potential_wallets.txt'
